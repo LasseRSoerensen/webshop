@@ -5,10 +5,13 @@ import FeaturedProducts from './components/FeaturedProducts.jsx'
 function App() {
   const [count, setCount] = useState(0)
   return (
-    <div className="bg-[#d4a373] flex flex-col">
+    <div className="bg-[#e1dfdc] flex flex-col">
       <Header />
-      <Landing />
-      <FeaturedProducts />
+      <div className="sm:max-w-[80%] flex flex-col self-center shadow-lg">
+        <Landing />
+        <FeaturedProducts />
+
+      </div>
 
     </div>
   )

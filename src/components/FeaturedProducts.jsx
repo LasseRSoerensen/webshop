@@ -18,15 +18,15 @@ function FeaturedProducts() {
     if (isLoading == false) {
 
         return (
-            <div className=" border-2 border-red-600 flex flex-col items-center">
-                <div>FEATURED PRODUCTS TITLE</div>
-                <div className="grid border-2 border-blue-500 sm:max-w-[90%]">
-        
+            <div className="bg-[#83d473] border-2 border-red-600 flex flex-col items-center">
+                <div>All Products</div>
+                <div className="flex flex-wrap justify-evenly">
                     {Products.map((product) => {
-                        return <FeaturedCard key={product.id} product={product} />;
+                        return <div className="border-2 m-2 mt-4 sm:max-w-[15%] sm:min-w-[300px] shadow-2xl"><FeaturedCard key={product.id} product={product} /></div>;
                     })}
         
                 </div>
+                
 
             </div>);
     }
